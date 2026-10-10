@@ -1,0 +1,19 @@
+[project]
+name = "virtual-assistant"
+version = "0.1.0"
+description = "Assistente virtuale di una palestra con ricerca nei documenti e funzioni (OpenAI Responses API + Chainlit)"
+authors = [
+    {name = "Mario Moccia",email = "mariona1991@hotmail.it"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.14.0"
+dependencies = ["chainlit (>=2.12.0,<3.0.0)", "openai (>=3.28.0,<4.0.0)", "python-dotenv (>=1.2.4,<2.0.0)"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
